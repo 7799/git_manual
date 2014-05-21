@@ -1,3 +1,25 @@
+#set up git
+git config --global user.name "7799"
+git config --global user.email "hayashi7799@gmail.com"
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
+#https://help.github.com/articles/set-up-git
+#vi ~/.config/git/config
+
+#create repo
+mkdir ~/Hello-World
+cd ~/Hello-World
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin https://github.com/7799/Hello-World.git
+git push origin master
+#tada~!
+
+
+
 25416  mkdir git_manual
 25417  cd git_manual/
 25419  ln -s ~/Documents/Text_Documents/git.txt ./
