@@ -1,3 +1,5 @@
+#clone pull push checkout commit merge branch
+
 
 #使えるツール   tig
 
