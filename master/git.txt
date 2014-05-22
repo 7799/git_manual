@@ -1,0 +1,71 @@
+#読みやすくてわかりやすい日本語サイト
+http://git-scm.com/book/ja/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97
+
+#set up git
+git config --global user.name "7799"
+git config --global user.email "hayashi7799@gmail.com"
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
+#https://help.github.com/articles/set-up-git
+#vi ~/.config/git/config
+
+#create repo
+mkdir ~/Hello-World
+cd ~/Hello-World
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin https://github.com/7799/Hello-World.git
+git push origin master
+#tada~!
+#https://help.github.com/articles/create-a-repo
+
+
+#Fork A Repo
+git clone https://github.com/7799/Spoon-Knife.git
+cd Spoon-Knife
+git remote add upstream https://github.com/octocat/Spoon-Knife.git
+git fetch upstream
+
+
+git push origin master
+git fetch upstream
+git merge upstream/master
+
+
+
+25416  mkdir git_manual
+25417  cd git_manual/
+25419  ln -s ~/Documents/Text_Documents/git.txt ./
+25421  git init
+25422  git add .
+25423  git commit -m "first commit"
+25424  git remote add origin https://github.com/7799/git_manual.gi
+25425  git push -u origin master
+25426  curl -u '7799' https://api.github.com/user/repos -d '{"name":"git_manual"}'
+25427  git remote add origin https://github.com/7799/git_manual.gi
+25428  git push -u origin master
+25429  git remote add origin https://github.com/7799/git_manual.git
+25430  git push -u origin master
+25431  vi .git/config
+25432  git push -u origin master
+
+
+
+Create a new repository on the command line
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/hayashi7799/android-location-provider-sample.git
+git push -u origin master
+
+Push an existing repository from the command line
+
+git remote add origin https://github.com/hayashi7799/android-location-provider-sample.git
+git push -u origin master
+
+
