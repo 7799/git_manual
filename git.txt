@@ -1,7 +1,11 @@
-#clone pull push checkout commit merge branch
+﻿#clone pull push checkout commit merge branch
 
 
 #使えるツール   tig
+
+#windows用コマンドライン　gitアプリ
+#http://msysgit.github.io/
+
 
 <<<<<<< HEAD
 参考:
